@@ -14,8 +14,6 @@ app.include_router(users_db.router)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 ####
 
-
-
 @app.get("/")
 async def root():
     return "Hola FastAPI"
